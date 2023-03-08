@@ -1,0 +1,170 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+font-size: 15px;
+padding: 0%;
+margin: 0%;
+}
+
+#contenedorSupremo{
+    width: 100%;
+    background-color: rgb(59, 39, 3);
+    padding-bottom: 0%;
+}
+
+header{
+    background-color: rgb(0, 0, 0);
+    padding: 5px;
+    background-image: url(/ULTIMATUMM/multimedia/imágenes/lógica.png);
+}
+
+#header{
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+#miNombre{
+    height: 100px;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+#espacioMiCara{
+    max-width: 100%;
+    padding: 0%;
+}
+
+#yo{
+    width:  100px;
+    float: right;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+/*NAV*/
+
+nav{
+    height: 40px;
+    padding: 0%;
+    margin: 0%;
+    max-width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+#seccionesNav .btn {
+    min-width: 100%;
+}
+
+/*MAIN*/
+
+
+.seccionesMain{
+    background-color: rgb(242, 179, 102);
+    margin: 4% 8%;
+    padding: 30px;
+}
+
+/* ASIDE: */
+
+aside{
+    background-color: rgb(110, 85, 65);
+    padding: 20px 150px;
+    border: 2px solid #000;
+    margin: 0px;
+}
+
+.seccionesAside{
+    background-color: rgb(245, 219, 153);
+}
+
+#contenedorCualidades{
+    width: 90%;
+    height: 140px; 
+    border: 1px solid #000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.1em;
+    display: table;
+}
+
+#textoCualidades{
+    height:82px;
+    display:table-cell;
+    vertical-align:middle;
+}
+
+.flechas{
+    display: inline;
+    width: 10%;
+}
+
+#imgProgramador{
+    width: 240px;
+    margin-top: 6px;
+}
+
+#infoPers{
+    width: 90%;
+    border: 1px solid #000;
+    font-size: 1.2em;
+}
+
+/*Cuerpo para arreglar el ancho*/
+#mainAside{
+    max-width: 100%;
+}
+
+
+/*FOOTER*/
+
+footer{
+    background-color: red;
+    border: 2px solid #000;
+}
+
+/*secciones llamadas por el nav:*/
+.seccionIluminada{
+    background-color: #03ffd18d;
+    border-color: rgb(0, 255, 255);
+}
+
+/*para celular y para tablet*/
+@media screen and (max-width:789px){
+    body{
+        font-size: 0.9rem;    
+    }
+    nav{
+        display: none !important;
+    }
+    #mainAside{
+        margin: 0 auto;
+    }
+    aside{  
+        margin: 0px 3px;
+        padding: 1%;    
+    }
+
+    .seccionesMain{
+        margin: 2%;
+        padding: 0;
+    }
+
+    #yo{
+        width: 90px;
+    }
+    #imgProgramador{
+        width: 100px;
+    }
+    footer{
+        height: 200px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+      form input, form button {
+        margin: 2px;
+    }
+}

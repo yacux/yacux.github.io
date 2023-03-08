@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/trabajoFinal.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="contenedorSupremo" class="col-12">
+        <header>
+            <div class="row" id="header">
+                    <div class="col-10" id="diez">
+                        <h1 id="miNombre" class="text-white border-black fw-bold">
+                            <span class="bg-dark">Benjamín Nacusi</span>
+                        </h1>
+                    </div>
+                    <div class="col-2" id="espacioMiCara">
+                        <img src="multimedia/imágenes/cv.jpg" alt="foto de mi cara" id="yo">
+                    </div>
+            <div class="row">
+                <center>
+                <h2 class="text-white border-black fw-bold">
+                    <span class="bg-dark">Desarrollador web</span>
+                </h2>
+                </center>
+            </div>
+            <br>
+        </header>
+        <nav class="row" id="seccionesNav">
+            <div class="col">
+              <center><p><a href="#contacto" class="btn btn-secondary text-white font-weight-bold text-uppercase text-decoration-none" onclick="iluminar(secContacto)">contacto</a></p></center>
+            </div>
+            <div class="col">
+                <center><p><a href="#secMain" class="btn btn-secondary text-white font-weight-bold text-uppercase text-decoration-none" onclick="iluminar(secMain)">experiencia y habilidades</a></p></center>
+            </div>
+            <div class="col">
+              <center><p><a href="#infoPers" class="btn btn-secondary text-white font-weight-bold text-uppercase text-decoration-none" onclick="iluminar(secInfoPers)">Información personal</a></p></center>
+            </div>
+          </nav><hr>
+        <div class="row" id="mainAside">
+            <main class="col-12 col-md-7" id="secMain">
+                <section>
+                    <article id="Lenguajes" class="seccionesMain">
+                        <center><h4>Lenguajes que manejo:</h4></center>
+                        <h5>De programación:</h5>
+                            <li><img src="multimedia/imágenes/js.png" alt="logo JS" height="36px"> JavaScript </li>
+                            <li><img src="multimedia/imágenes/sql.png" alt="logo SQL" height="36px"> SQL en MySQL Workbench </li>
+                        <h5>de marcado:</h5>
+                            <li> <img src="multimedia/imágenes/html.png" alt="logo html" height="36px" id="html"> HTML</li>
+                            <li> <img src="multimedia/imágenes/css.png" alt="logo css" height="36px"> CSS</li>
+                    </article>
+                    <article id="cursos" class="seccionesMain">
+                        <center><h4>Cursos:</h4></center>
+                            <h5>Que completé:</h5>
+                            <li>Curso de JavaScript de Jonmircha <a href="https://youtu.be/2SetvwBV-SU">verlo</a></li>
+                            <li>2 Cursos de SQL <a href="https://www.youtube.com/watch?v=_8MjEhfKRbI&t=6394s">ver el de Lucas Moy</a> ó <a href="https://youtu.be/uUdKAYl-F7g">ver el de Hola Mundo</a></li>
+                            <br>
+                            <h5>Que estoy haciendo todavia:</h5>
+                            <li>Pledu, Plataforma 5. Curso introductorio <a href="https://www.plataforma5.la/aplica/intro">verlo</a></li>
+                    </article>
+                    <article id="exp/hab" class="seccionesMain">
+                        <h4>Idioma:</h4>
+                        <li>INGLÉS (no perfecto, pero muy buen nivel. En constante aprendizaje)</li><br>
+                        <h4>Trabajos anteriores:</h4>
+                        <li>Mozo, en salón de eventos Bolgheri <a href="https://goo.gl/maps/Ggk7BmZUMYMozqNU6">ver Salón</a></li>
+                        <li>Preparador de pedidos en Droguería Lomas</li>
+                        <li>limpiador de piletas</li>
+                    </article>
+                </section>
+            </main>
+            <aside class="col-12 col-md-5">
+                <center>
+                    <div class="row">
+                        <div class="col">
+                            <h5>Algunas cualidades...</h5>
+                            <section id="contenedorCualidades" class="seccionesAside">
+                                <p id="textoCualidades"></p>
+                                <br>
+                            </section><br>
+                            <img src="multimedia/imágenes/flecha.png" alt="--->" class="flechas">
+                            <button onclick="verMás()" class="btn btn-dark">saber más</button> 
+                            <img src="multimedia/imágenes/flecha(2).png" alt="<---" class="flechas">
+                        </div> 
+                    </div>
+                    <hr>
+                    <div class="col">
+                        <section id="infoPers" class="seccionesAside">
+                            <h4>Información personal</h4><hr>
+                            <ul>
+                                <li><h5>Nombre:</h5> Mauro Benjamín Nacusi Egea</li><br>
+                                <li><h5>Edad:</h5> 21</li><br>
+                                <li><h5>Locación:</h5> Córdoba, Argentina</li><br>
+                                <li><h5>Estudio en:</h5> UTN, Ingeniería en Sistemas (1er año)</li><br>
+                            </ul>
+                        </section>
+                    </div>
+                    <img src="multimedia/imágenes/programador.png" alt="imagen de programador" id="imgProgramador">
+                </center>
+            </aside>
+        </div>
+        <hr>
+            <footer class="footer p-3" id="contacto">
+                <center>
+                    <h5 id="contactame">contactame :)</h5>
+                    <form action="https://formsubmit.co/benjanacusi2001@gmail.com" method="POST">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                        <input type="hidden" name="tema" value="CV Posible Trabajo">
+                        <input type="text" name="nombre" placeholder="nombre"  id="nombreCliente" required>
+                        <input type="email" name="email" placeholder="email"  id="emailCliente" required>                        
+                        <input type="text" name="mensaje" placeholder="escribime un mensaje" id="mensajeCliente" required>
+                        <button type="submit" onclick="agradecer(event)" class="btn btn-dark">enviar</button>
+                    </form>
+                </center>
+            </footer>
+    </div>
+    <script src="trabajoFinal.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
